@@ -2,10 +2,128 @@
 
 <html lang="en">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mior Amir Amzar | Information Technology Executive</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.profile{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #3b82f6;
+    box-shadow:0 0 40px rgba(59,130,246,0.6);
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+}
+
+h1{
+    font-size:4rem;
+    margin-top:30px;
+}
+
+.title{
+    color:#60a5fa;
+    font-size:1.6rem;
+    margin-top:10px;
+}
+
+.tagline{
+    margin-top:20px;
+    color:#cbd5e1;
+    max-width:900px;
+    line-height:1.8;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    margin:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(37,99,235,.4);
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:30px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.skill{
+    margin-bottom:25px;
+}
+
+.bar{
+    width:100%;
+    background:#334155;
+    height:12px;
+    border-radius:10px;
+}
+
+.fill{
+    height:12px;
+    background:#3b82f6;
+    border-radius:10px;
+    animation:grow 2s ease;
+}
+
+@keyframes grow{
+    from{width:0;}
+}
+</style>
 <style>
 *{
     margin:0;
